@@ -22,4 +22,5 @@ cc_library(
     linkopts = [
         "-lprotobuf",
     ],
+    toolchains = ["@bazel_tools//tools/cpp:toolchain"],  # 显式指定默认工具链
 )
